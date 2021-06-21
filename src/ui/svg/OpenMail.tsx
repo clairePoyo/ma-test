@@ -1,0 +1,19 @@
+const OpenMail = (props: SvgProps) => (
+  <svg
+    width="20"
+    height="19"
+    viewBox="0 0 20 19"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20 7C20 6.3 19.6 5.7 19.1 5.3L10 0L0.9 5.3C0.4 5.7 0 6.3 0 7V17C0 18.1 0.9 19 2 19H18C19.1 19 20 18.1 20 17V7ZM10 12L1.7 6.8L10 2L18.3 6.8L10 12Z"
+      fill={props.color || "#CCCCCC"}
+    />
+  </svg>
+);
+
+export default OpenMail;

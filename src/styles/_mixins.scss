@@ -1,0 +1,22 @@
+@mixin display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin small-screen {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin sender-name {
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}

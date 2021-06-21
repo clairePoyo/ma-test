@@ -1,0 +1,17 @@
+.navigation {
+  overflow-y: auto;
+  width: 375px;
+  min-width: 375px;
+  max-width: 375px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include small-screen {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.tag {
+  @include display-flex;
+  background: $color-blue;
+  border-radius: $spacing-xs;
+  height: $spacing-l;
+  width: 64px;
+  padding: $spacing-xs;
+  box-sizing: border-box;
+  color: $color-white;
+  font-weight: $font-weight-normal;
+
+  &--unread {
+    background-color: $color-blue;
+  }
+  &--all-read {
+    background-color: $color-darker-grey;
+  }
+}

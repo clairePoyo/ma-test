@@ -1,0 +1,40 @@
+@import "./styles/_variables";
+@import "./styles/mixins";
+
+@import "./ui/EmptyState/EmptyState";
+@import "./ui/Header/Header";
+@import "./ui/MessageContent/MessageContent";
+@import "./ui/MessagePreview/MessagePreview";
+@import "./ui/MessageViewer/MessageViewer";
+@import "./ui/Navigation/Navigation";
+@import "./ui/Select/Select";
+@import "./ui/SenderInformation/SenderInformation";
+@import "./ui/Tag/Tag";
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app-container {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  overflow: hidden;
+}

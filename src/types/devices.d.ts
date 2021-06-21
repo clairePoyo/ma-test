@@ -1,0 +1,1 @@
+type DeviceSizeString = "mobile" | "desktop";

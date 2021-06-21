@@ -1,0 +1,70 @@
+.message-preview {
+  @include display-flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  height: 120px;
+  padding: $spacing-s $spacing-xs;
+  cursor: pointer;
+
+  & + .message-preview {
+    border-top: 1px solid $color-light-grey;
+  }
+
+  &--read {
+    color: $color-dark-grey;
+    @include desktop {
+      background-color: $color-lighter-grey;
+    }
+  }
+
+  &__title {
+    @include display-flex;
+    width: 100%;
+
+    > h4 {
+      @include sender-name;
+
+      > span:last-child {
+        font-size: 14px;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+  &__date {
+    color: $color-blue;
+    font-size: 14px;
+    font-weight: $font-weight-light;
+
+    &--read {
+      color: $color-dark-grey;
+    }
+  }
+  &__content {
+    @include display-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 12px;
+    width: 100%;
+  }
+  &__intro {
+    font-size: 14px;
+    font-weight: $font-weight-light;
+    line-height: $spacing-m;
+    margin: $spacing-xxs 0;
+  }
+  &__body {
+    color: $color-dark-grey;
+    font-weight: $font-weight-light;
+    font-size: 14px;
+    line-height: $spacing-s;
+    margin: 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    height: $spacing-l;
+  }
+}
