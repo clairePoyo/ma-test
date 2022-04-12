@@ -1,0 +1,10 @@
+.select {
+  margin-left: $spacing-s;
+  font-weight: $font-weight-light;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+
+  @include small-screen {
+    margin-left: $spacing-xs;
+  }
+}

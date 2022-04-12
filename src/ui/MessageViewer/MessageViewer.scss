@@ -1,0 +1,9 @@
+.message-viewer {
+  @include display-flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-left: 1px solid $color-light-grey;
+  flex: 1 1;
+  background-color: $color-lighter-grey;
+  padding: $spacing-l $spacing-m;
+}

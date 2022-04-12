@@ -1,0 +1,25 @@
+.header {
+  @include display-flex;
+  height: 60px;
+  min-height: 60px;
+  padding: 0 $spacing-l 0 $spacing-xs;
+  box-shadow: $shadow;
+  z-index: 1;
+
+  @include small-screen {
+    padding: 0 $spacing-xs;
+  }
+
+  & > img {
+    max-height: $spacing-xxl;
+    margin-left: $spacing-xs;
+
+    @include small-screen {
+      max-height: $spacing-xl;
+    }
+  }
+
+  .widget-wrapper {
+    @include display-flex;
+  }
+}
